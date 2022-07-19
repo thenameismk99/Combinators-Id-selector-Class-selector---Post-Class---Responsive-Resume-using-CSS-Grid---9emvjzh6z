@@ -117,7 +117,7 @@ hr{
         grid-template-columns: repeat(1, 1fr);
     }
 }
-/* For tablet view  */
+/* For tablet view  
 @media Screen and (min-width:480px) and (max-width:768px){
     .main-content{
         grid-template-columns: repeat(1, 1fr);
@@ -128,4 +128,4 @@ hr{
         grid-template-columns: repeat(1, 1fr);
     }
 }
-/* Write CSS code below */
+ Write CSS code below */
