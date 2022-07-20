@@ -5,6 +5,8 @@
     list-style: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* Write CSS code below */
 .main-content{
     display: grid;
     min-height: 1000px;
@@ -66,9 +68,9 @@ hr{
     margin: auto;
 }
 .icon{
-    display: inline-block;
+    display: block;
     margin: auto;
-    padding:8px;
+    padding: 8px;
 }
 .fa{
     color: rgb(147, 201, 233);
@@ -96,7 +98,7 @@ hr{
 }
 .right-section{
     grid-column: span 1/ span 2;
-    background-color: rgb(241, 250, 252);
+    background-color: rgb(105, 205, 228);
 }
 .right-main-content{
     padding: 2rem 3rem;
@@ -111,21 +113,8 @@ hr{
 .para{
     padding: 0.5rem;
 }
-/* For desktop view */
 @media screen and (min-width: 0px) and (max-width: 673px) {
     .main-content {
         grid-template-columns: repeat(1, 1fr);
     }
 }
-/* For tablet view  
-@media Screen and (min-width:480px) and (max-width:768px){
-    .main-content{
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-@media screen and (min-width:320px) and (max-width:480px) {
-    .main-content{
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
- Write CSS code below */
