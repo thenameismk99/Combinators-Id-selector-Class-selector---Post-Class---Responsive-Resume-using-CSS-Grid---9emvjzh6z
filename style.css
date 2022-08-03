@@ -7,101 +7,113 @@
 }
 
 /* Write CSS code below */
+body{
+    background-color: #a6abad;
+    display: block;
+}
+section{
+    display: block;
+}
 .main-content{
-    display: grid;
     min-height: 1000px;
-    width: 90%;
+    width:90%;
+    margin: 20px auto;
+    display: grid;
     grid-template-columns: 300px 700px;
 }
 .left-section{
+    background-color: #242531;
     grid-column: span 1;
-    background-color: rgb(15, 105,105);
 }
 .left-content{
     padding: 1rem;
-}
-.profile-pic{
-    margin-top: 50px;
+    color: #f7f7f7;
 }
 .profile-image{
-    display: block;
-    height: 60%;
-    width: 60%;
     margin: auto;
+    display: block;
     border: 5px white solid;
     border-radius: 30%;
+    width: 60%;
 }
 .name{
     font-size: 1.2rem;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    padding: 0.8rem;
     letter-spacing: 0.02px;
-    color: white;
+    padding: 0.8rem;
 }
 .designation{
+    color: #94d9ea;
     font-size: 1rem;
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 0.5rem;
-    color: white;
-}
-hr{
-    background-color: white;
 }
 .description{
-    font-size: 0.75rem;
+    font-size:0.75rem ;
     text-align: center;
     padding: 1rem;
-    color: white;
+}
+.contact-info{
+    margin: auto;
+}
+.contact-item{
+    margin: auto;
 }
 .social-media{
     display: flex;
-    list-style: none;
-    font-size: 20px;
-    margin: auto;
-}
-.personal-details{
-    list-style: none;
-    font-size: 15px;
-    margin: auto;
+    justify-content: center;
 }
 .icon{
-    display: block;
-    margin: auto;
-    padding: 8px;
+    display: inline;
+    padding-inline: 10px;
+    
 }
-.fa{
-    color: rgb(147, 201, 233);
+i{
+    color:rgba(152, 154, 243, 0.808); 
+}
+.personal-details li{
+    display:block;
+    font-size:0.8rem ;
+    margin: 5px;
 }
 .skills{
     font-size: 0.75rem;
     text-align: center;
     text-transform: uppercase;
-    padding: 1rem 0.5rem;
-    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.skill-item{
+    margin-left: 15px;
 }
 .skill-name{
-    color: white;
     font-size: 0.65rem;
+    font-weight: 0.65rem;
     text-align: left;
     padding-bottom: 0.5rem;
 }
 .progress-bar{
     height: 4px;
-    border: 1px solid white;
+    border: 1px white solid;
+    border-radius: 10px;
     background-color: white;
-}
-.skill-item{
-    padding: 0.5rem;
+    margin-bottom: 0.9rem;
 }
 .right-section{
-    grid-column: span 1/ span 2;
-    background-color: rgb(105, 205, 228);
+    background-color: #f7f7f7;
+    grid-column: span 1 / span 2;
 }
+
 .right-main-content{
-    padding: 2rem 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .right-title{
     text-transform: uppercase;
@@ -110,11 +122,8 @@ hr{
     padding: 0.5rem;
     letter-spacing: 1px;
 }
-.para{
-    padding: 0.5rem;
-}
-@media screen and (min-width: 0px) and (max-width: 673px) {
-    .main-content {
-        grid-template-columns: repeat(1, 1fr);
+@media screen and (max-width:673px){
+    .main-content{
+        grid-template-columns: repeat(1,1fr);
     }
 }
